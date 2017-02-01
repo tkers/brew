@@ -5,6 +5,7 @@ html, body {
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
+  background-color: #F7CB6F;
 }
 
 .reverseRange {
@@ -12,15 +13,17 @@ html, body {
 }
 
 .input-half, .output-half {
-  padding: 10px 20px;
+  padding: 20px 30px;
   color: #4D5159;
+  text-align: center;
 }
 
 .input-half {
-  background-color: #E5E5E5
+  background-color: #E5E5E5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .output-half {
   background-color: #F7CB6F;
-  height: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
