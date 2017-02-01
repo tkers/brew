@@ -15,7 +15,6 @@ html, body {
 .input-half, .output-half {
   padding: 20px 30px;
   color: #4D5159;
-  text-align: center;
 }
 
 .input-half {
@@ -24,6 +23,24 @@ html, body {
 }
 
 .output-half {
+  text-align: center;
   background-color: #F7CB6F;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.output-half img {
+  width: 64px;
+  margin-bottom: 10px;
+}
+
+.output-half output {
+  font-weight: bold;
+  color: #000000;
+}
+
+.column {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
 }
