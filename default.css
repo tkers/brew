@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+html, body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.reverseRange {
+  direction: rtl;
+}
+
+.input-half, .output-half {
+  padding: 10px 20px;
+  color: #4D5159;
+}
+
+.input-half {
+  background-color: #E5E5E5
+}
+
+.output-half {
+  background-color: #F7CB6F;
+  height: 100%;
+}
