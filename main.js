@@ -1,27 +1,34 @@
+function find(xs, f) {
+  return Array.prototype.find.call(xs, f);
+}
+
+function isChecked(n) {
+  return n.checked;
+}
+
+function getIntValue(n) {
+  return parseInt(n.value, 10);
+}
+
 function updateNumbers() {
 
-  var servingsIn = document.getElementById("servingsIn");
-  var servingsOut = document.getElementById("servingsOut");
+  var servingsIn = document.getElementsByName("servingsIn");
+  var ratioIn = document.getElementsByName("ratioIn");
   var volumeOut = document.getElementById("volumeOut");
-
-  var ratioIn = document.getElementById("ratioIn");
-  var ratioOut = document.getElementById("ratioOut");
   var gramsOut = document.getElementById("gramsOut");
 
-  var servings = servingsIn.valueAsNumber;
-  var ratio = ratioIn.valueAsNumber;
+  var servings = getIntValue(find(servingsIn, isChecked));
+  var ratio = 1 / getIntValue(find(ratioIn, isChecked));
 
   var volume = servings * 200;
-  var grams = volume / ratio;
+  var grams = volume * ratio;
 
-  servingsOut.value = servings.toFixed(1);
   volumeOut.value = volume.toFixed(0);
-  ratioOut.value = ratio.toFixed(1);
   gramsOut.value = grams.toFixed(0);
 }
 
 window.onload = function () {
   var settingsForm = document.getElementById("settingsForm");
-  settingsForm.oninput = updateNumbers;
+  settingsForm.onchange = updateNumbers;
   updateNumbers();
 };
