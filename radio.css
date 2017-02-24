@@ -6,6 +6,9 @@ ul.segmented, ul.segmented > li {
 ul.segmented {
 	display: table;
   width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 ul.segmented > li {
@@ -24,6 +27,7 @@ ul.segmented > li > label {
   text-align: center;
   padding: .1em 0;
   margin: 0 .2em;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
 }
 
 ul.segmented > li > label:hover {
