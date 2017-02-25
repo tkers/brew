@@ -6,6 +6,7 @@ ul.segmented, ul.segmented > li {
 ul.segmented {
 	display: table;
   width: 100%;
+  margin: 0.2em 0 1em;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
@@ -13,6 +14,7 @@ ul.segmented {
 
 ul.segmented > li {
   display: table-cell;
+  list-style-type: none;
 }
 
 ul.segmented > li > input[type="radio"] {
@@ -25,8 +27,8 @@ ul.segmented > li > label {
   cursor: pointer;
   border-radius: 10em;
   text-align: center;
-  padding: .1em 0;
-  margin: 0 .2em;
+  padding: 0.1em 0;
+  margin: 0 0.2em;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   color: rgba(255, 255, 255, 0.5);

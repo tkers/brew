@@ -24,6 +24,10 @@ html, body {
   color: #FFFFFF;
 }
 
+form {
+  margin: 0;
+}
+
 .output-half {
   /*background-color: #DAD6CA;*/
   color: rgba(0, 0, 0, 0.5);
@@ -31,14 +35,14 @@ html, body {
 }
 
 .output-half strong {
-  font-weight: normal;
-  color: #000000;
+  font-weight: bold;
+  color: #E86539;
 }
 
 .wrap {
   max-width: 480px;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 0.7em 1em;
 }
 
 .output-half .column {
@@ -46,11 +50,12 @@ html, body {
   box-sizing: border-box;
   width: 50%;
   float: left;
+  margin: 0.2em 0 1em;
 }
 
 .output-half img {
   width: 64px;
-  margin-bottom: 10px;
+  margin-bottom: 0.2em;
 }
 
 .output-half output {
