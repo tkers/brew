@@ -27,22 +27,23 @@ ul.segmented > li > label {
   text-align: center;
   padding: .1em 0;
   margin: 0 .2em;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
 }
 
 ul.segmented > li > label:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: #000000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 ul.segmented > li > label:active {
-  background: #FFFFFF;
-  color: #000000;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
 }
 
 ul.segmented > li > input[type="radio"]:checked + label {
-  background: #F7CB6F;
-  color: #000000;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #E86539;
+  color: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }

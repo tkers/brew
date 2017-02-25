@@ -5,8 +5,7 @@ html, body {
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
-  background-color: #F7CB6F;
-  color: rgba(0, 0, 0, 0.5);
+  background-color: #DAD6CA;
 }
 
 .input-half, .output-half {
@@ -14,13 +13,26 @@ html, body {
 }
 
 .input-half {
-  background-color: #E5E5E5;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #5A504C;
+  /*color: #DAD6CA;*/
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-half strong {
+  font-weight: normal;
+  color: #FFFFFF;
 }
 
 .output-half {
-  background-color: #F7CB6F;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  /*background-color: #DAD6CA;*/
+  color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.output-half strong {
+  font-weight: normal;
+  color: #000000;
 }
 
 .wrap {
@@ -39,9 +51,4 @@ html, body {
 .output-half img {
   width: 64px;
   margin-bottom: 10px;
-}
-
-strong {
-  font-weight: bold;
-  color: #000000;
 }
