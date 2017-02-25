@@ -52,3 +52,8 @@ html, body {
   width: 64px;
   margin-bottom: 10px;
 }
+
+.output-half output {
+  opacity: 1;
+  transition: opacity 200ms;
+}
