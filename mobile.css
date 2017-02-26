@@ -1,0 +1,11 @@
+@media screen and (max-width: 300px) {
+  ul.segmented > li {
+    display: inline;
+  }
+
+  .output-half .column {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+}
