@@ -62,3 +62,17 @@ form {
   opacity: 1;
   transition: opacity 200ms;
 }
+
+ul.horizontal {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+ul.horizontal > li {
+  display: table-cell;
+}

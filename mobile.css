@@ -1,6 +1,6 @@
 @media screen and (max-width: 300px) {
-  ul.segmented > li {
-    display: inline;
+  ul.horizontal > li {
+    display: block;
   }
 
   .output-half .column {
