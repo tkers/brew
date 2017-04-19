@@ -3,9 +3,18 @@
     display: block;
   }
 
-  .output-half .column {
-    display: block;
-    width: 100%;
-    float: none;
+  ul.outputs > li {
+    border: 0;
+    padding: 0.4em 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  ul.outputs > li:first-child {
+    border-top: 0;
+  }
+
+  ul.outputs > li:last-child {
+    border-bottom: 0;
   }
 }

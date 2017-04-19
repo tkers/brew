@@ -8,6 +8,12 @@ html, body {
   background-color: #DAD6CA;
 }
 
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0.7em 1em;
+}
+
 .input-half, .output-half {
   text-align: center;
 }
@@ -29,7 +35,7 @@ form {
 }
 
 .output-half {
-  /*background-color: #DAD6CA;*/
+  background-color: #DAD6CA;
   color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -39,18 +45,17 @@ form {
   color: #E86539;
 }
 
-.wrap {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0.7em 1em;
+ul.outputs > li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.output-half .column {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 50%;
-  float: left;
-  margin: 0.2em 0 1em;
+ul.outputs > li:first-child {
+  border-left: 0;
+}
+
+ul.outputs > li:last-child {
+  border-right: 0;
 }
 
 .output-half img {
