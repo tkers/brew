@@ -21,3 +21,11 @@
     border-bottom: 0;
   }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  ul.segmented,
+  ul.segmented > li > label,
+  ul.outputs > li {
+    border-width: 0.5px;
+  }
+}
