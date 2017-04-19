@@ -11,7 +11,11 @@ html, body {
 .wrap {
   max-width: 480px;
   margin: 0 auto;
-  padding: 0.7em 1em;
+  padding: 0.7em 1em 0;
+}
+
+.output-half .wrap {
+  padding: 0.7em 0.25em 0;
 }
 
 .input-half, .output-half {
@@ -43,6 +47,10 @@ form {
 .output-half strong {
   font-weight: bold;
   color: #E86539;
+}
+
+ul.outputs {
+  margin: 0.2em 0 1em;
 }
 
 ul.outputs > li {
