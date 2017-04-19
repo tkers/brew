@@ -1,6 +1,7 @@
 @media screen and (max-width: 300px) {
   ul.horizontal > li {
     display: block;
+    width: auto;
   }
 
   ul.outputs > li {
@@ -11,10 +12,12 @@
   }
 
   ul.outputs > li:first-child {
+    padding-top: 0;
     border-top: 0;
   }
 
   ul.outputs > li:last-child {
+    padding-bottom: 0;
     border-bottom: 0;
   }
 }

@@ -54,15 +54,18 @@ ul.outputs {
 }
 
 ul.outputs > li {
+  padding: 0 0.1em;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 ul.outputs > li:first-child {
+  padding-left: 0;
   border-left: 0;
 }
 
 ul.outputs > li:last-child {
+  padding-right: 0;
   border-right: 0;
 }
 
