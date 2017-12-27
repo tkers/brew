@@ -1,3 +1,6 @@
+var CUP_VOLUME_ML = 150
+var FADE_DURATION_MS = 200
+
 function find(xs, f) {
   return Array.prototype.find.call(xs, f);
 }
@@ -40,16 +43,16 @@ function updateNumbers() {
   var servings = getIntValue(find(servingsIn, isChecked));
   var ratio = 1 / getIntValue(find(ratioIn, isChecked));
 
-  var volume = servings * 200;
+  var volume = servings * CUP_VOLUME_ML;
   var grams = volume * ratio;
 
   var displayVolume = volume.toFixed(0).toString();
   if (volumeOut.value !== displayVolume)
-    updateFade(volumeOut, displayVolume, 200);
+    updateFade(volumeOut, displayVolume, FADE_DURATION_MS);
 
   var displayGrams = grams.toFixed(0).toString();
   if (gramsOut.value !== displayGrams)
-    updateFade(gramsOut, displayGrams, 200);
+    updateFade(gramsOut, displayGrams, FADE_DURATION_MS);
 }
 
 window.onload = function () {
