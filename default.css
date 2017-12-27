@@ -27,6 +27,11 @@ html, body {
   /*color: #DAD6CA;*/
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#top-half {
+    transition: margin-top 1000ms;
 }
 
 .input-half strong {
@@ -71,7 +76,7 @@ ul.outputs > li:last-child {
 }
 
 .output-half img {
-  width: 64px;
+  width: 40px;
   margin-bottom: 0.2em;
 }
 
@@ -92,4 +97,14 @@ ul.horizontal {
 
 ul.horizontal > li {
   display: table-cell;
+}
+
+.scrollx {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollx ul.horizontal > li {
+  width: 100px;
+  padding: 0 0.2em;
 }

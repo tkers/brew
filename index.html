@@ -4,6 +4,8 @@
 
     <title>Brew</title>
 
+    <meta charset="UTF-8">
+
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -21,9 +23,29 @@
   </head>
   <body>
 
-    <div class="input-half">
+    <div class="input-half" id="top-half">
       <div class="wrap">
         <form id="settingsForm">
+
+          <strong>Method</strong>
+          <ul class="horizontal segmented">
+            <li>
+              <input type="radio" name="methodIn" value="chemex" id="m1" checked />
+              <label for="m1"><img src="icon-chemex.svg" /></label>
+            </li>
+            <li>
+              <input type="radio" name="methodIn" value="french" id="m2" />
+              <label for="m2"><img src="icon-french.svg" /></label>
+            </li>
+            <!-- <li>
+              <input type="radio" name="methodIn" value="hario" id="m3" />
+              <label for="m3"><img src="icon-hario.svg" /></label>
+            </li> -->
+            <!-- <li>
+              <input type="radio" name="methodIn" value="espresso" id="m4" />
+              <label for="m4"><img src="icon-espresso.svg" /></label>
+            </li> -->
+          </ul>
 
           <strong>Servings</strong>
           <ul class="horizontal segmented">
@@ -49,19 +71,19 @@
             </li>
           </ul>
 
-          <strong>Ratio</strong>
+          <strong>Strength</strong>
           <ul class="horizontal segmented">
             <li>
-              <input type="radio" name="ratioIn" value="16" id="r1" checked />
-              <label for="r1">1:16</label>
+              <input type="radio" name="strengthIn" value="1" id="r1" checked />
+              <label for="r1">⁎</label>
             </li>
             <li>
-              <input type="radio" name="ratioIn" value="14" id="r2" />
-              <label for="r2">1:14</label>
+              <input type="radio" name="strengthIn" value="2" id="r2" />
+              <label for="r2">⁑</label>
             </li>
             <li>
-              <input type="radio" name="ratioIn" value="12" id="r3" />
-              <label for="r3">1:12</label>
+              <input type="radio" name="strengthIn" value="3" id="r3" />
+              <label for="r3">⁂</label>
             </li>
           </ul>
 
@@ -76,12 +98,17 @@
         <ul class="horizontal outputs">
 
           <li>
+            <img src="icon-grinder.svg" /><br />
+            &rang; <strong><output id="courseOut" for="methodIn"></output></strong> &lang;
+          </li>
+
+          <li>
             <img src="icon-bean.svg" /><br />
             <strong><output id="gramsOut" for="servingsIn ratioIn"></output></strong> g
           </li>
 
           <li>
-            <img src="icon-water.svg" /><br />
+            <img src="icon-water.svg" onclick="document.getElementById('top-half').style.marginTop='-100%'" /><br />
             <strong><output id="volumeOut" for="servingsIn"></output></strong> mL
           </li>
 
